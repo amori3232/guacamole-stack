@@ -27,10 +27,19 @@ cd guacd
 
 docker compose up -d
 
+
+
 ### VM2
 
 git clone ...
 
 cd guacamole-web
 
-docker compose up -d# guacamole-stack
+
+cd guacamole-enterprise-stack/guacamole-web
+nano .env
+then update GUACD_HOST=VM1-IP
+
+docker compose up -d
+
+# guacamole-stack

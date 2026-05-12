@@ -1,6 +1,6 @@
-# Guacamole Enterprise Stack
+# Guacamole Stack
 
-Enterprise deployment architecture for Apache Guacamole.
+This is to deploy Guacamole in two separate environments. So you can manage and understand the communication between the web and the Guacamole app through port 4822
 
 ## Components
 

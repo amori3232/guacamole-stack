@@ -1,0 +1,18 @@
+services:
+
+  guacd:
+    image: guacamole/guacd
+    container_name: guacd
+
+    restart: unless-stopped
+
+    ports:
+      - "4822:4822"
+
+    volumes:
+      - guacd_drive:/drive
+      - guacd_record:/record
+
+volumes:
+  guacd_drive:
+  guacd_record:
